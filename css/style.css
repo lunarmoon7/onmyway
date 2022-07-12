@@ -11,7 +11,6 @@ body {
   position: absolute;
   width: inherit;
   height: 500px;
-  border: 1px solid black;
   box-sizing: border-box;
   top: 50%;
   left: 50%;
@@ -25,13 +24,14 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   font-family: 'Oswald', sans-serif;
-  font-size: 10rem;
   margin: 0 auto;
   text-align: center;
 }
 
 .container h1 span {
   letter-spacing: 2rem;
+  font-size: 250px;
+  display: inline-block;
   text-shadow: 
         1px 1px 1px #333,
         1px 2px 1px #333,
@@ -47,30 +47,39 @@ body {
         1px 22px 10px rgba(16,16,16,0.2),
         1px 25px 35px rgba(16,16,16,0.2),
         1px 30px 60px rgba(16,16,16,0.4);
+        transition: 0.5s;
 }
 .container h1 span:nth-child(1){
   color: crimson;
-  animation: changeColor1 500ms linear infinite;
+  animation: changeColor1 1s linear infinite;
 }
 
 .container h1 span:nth-child(2){
   color: coral;
-  animation: changeColor2 500ms linear infinite;
+  animation: changeColor2 1s linear infinite;
 }
 
 .container h1 span:nth-child(3){
   color: yellowgreen;
-  animation: changeColor3 500ms linear infinite;
+  animation: changeColor3 1s linear infinite;
 }
 
 .container h1 span:nth-child(4){
   color: dodgerblue;
-  animation: changeColor4 500ms linear infinite;
+  animation: changeColor4 1s linear infinite;
 }
 
 .container h1 span:nth-child(5){
   color: rgb(188, 23, 188);
-  animation: changeColor5 500ms linear infinite;
+  animation: changeColor5 1s linear infinite;
+}
+
+.container h1 span:nth-child(1):hover,
+.container h1 span:nth-child(2):hover,
+.container h1 span:nth-child(3):hover,
+.container h1 span:nth-child(4):hover,
+.container h1 span:nth-child(5):hover{
+  transform: translateY(-30px);
 }
 
 @keyframes changeColor1 {
