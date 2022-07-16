@@ -1,0 +1,68 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 1200px;
+  height: 800px;
+  /* border: 1px solid black; */
+  border-radius: 13px;
+}
+
+.upper {
+  border: 1px solid rgb(42, 42, 42);
+  height: 40px;
+  border-radius: 13px 13px 0 0;
+  display: flex;
+  align-items: center;
+  border-bottom: none;
+  background-color: rgb(187, 184, 184, 0.2);
+}
+
+.section {
+  /* border: 1px solid dodgerblue; */
+  height: 760px;
+  border-radius: 0 0 13px 13px;
+  background-color: #fff;
+  border: 1px solid rgb(42, 42, 42);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section span {
+  /* border: 1px solid black; */
+  height: 8rem;
+  font-weight: bold;
+  font-size: 8rem;
+}
+.icons {
+  /* border: 1px solid purple; */
+  margin-left: 10px;
+}
+
+.upper .icons i {
+  display: inline-block;
+  border: 1px solid black;
+  padding: 5px;
+  border-radius: 50%;
+  color: rgb(44, 43, 43);
+  font-size: 13px;
+  width: 13px;
+  height: 13px;
+  line-height: 13px;
+  margin: 0 2px;
+}
+
+.icons i:nth-child(1) {
+  background-color: rgb(225, 39, 22);
+  padding-left: 11px;
+}
+.icons .i2 {
+  background-color: rgb(246, 190, 80);
+}
+.icons .i3 {
+  background-color: rgb(99, 199, 86);
+}
+
