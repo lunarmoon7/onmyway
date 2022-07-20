@@ -1,0 +1,77 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modal</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      position: relative;
+    }
+
+    .container {
+      width: 100%;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    #modal {
+      display: none;
+      position: absolute;
+      width: 800px;
+      height: 800px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #modal-window {
+      display: none;
+      width: 500px;
+      height: 500px;
+      overflow: scroll;
+      border-radius: 20px;
+      padding: 15px;
+      border: 1px solid black;
+      color: #fff;
+    }
+    
+    .closeBtn {
+      float: right;
+      margin: 7px 13px;
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+    .modal-title {
+      margin-top: 25px;
+      text-align: center;
+    }
+    .modal-content {
+      font-size: 1.5rem;
+      padding: 15px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Modal Test</h2>
+    <button id="btn">Open Modal-Frame</button>
+  </div>
+  
+  <div id="modal" class="modal-overlay">
+    <div id="modal-window">
+      <div class="closeBtn">x</div>
+      <div class="modal-title"><h2>Modal</h2></div>
+      <div class="modal-content">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde iste facere aliquid? Ipsa reiciendis saepe modi sint, iste officia excepturi velit eius nesciunt ea, sed, sapiente officiis ut assumenda molestias consequatur voluptate blanditiis eum. Rem tempore, explicabo animi inventore veritatis veniam sit cum quisquam aut, odit amet reiciendis voluptate, minima vitae deleniti modi error molestiae assumenda perferendis iure consectetur nesciunt expedita! Quam distinctio perspiciatis, dolore dicta excepturi cum ex molestiae hic? Aperiam sint quo aspernatur fugiat, nemo illum, mollitia sed ducimus consectetur, deleniti tempore iste quam eos qui inventore corporis eveniet itaque culpa non veniam sunt delectus suscipit. Impedit, reiciendis.
+      </div>
+    </div>
+  </div>
+  <script src="/js/modal.js"></script>
+</body>
+</html>
