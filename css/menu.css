@@ -12,7 +12,7 @@ ul, li {
   position: absolute;
   top: 0;
   left: 0;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   margin: 30px;
   text-align: center;
 }
