@@ -1,0 +1,95 @@
+body {
+  height: 100vh;
+  margin: 0;
+}
+
+/* 
+label은 input의 역할의 복제와 같다. 
+여기 checkbox 타입인 input이 있을 때,
+label을 클릭하게 되면 checkbox가 선택으로 바뀌고,
+다시 한번 클릭하면 선택이 해제된다.
+*/
+
+/* 
+checkbox모양이 별로여서 다른 모양으로 
+만들고 싶은데 같은 기능을 하도록 만드려고
+label을 사용하는 것 같다. (개인적인 의견)
+ */
+
+/* 
+여기서 모든 화면에 보이는 요소들을 감싸는 container는
+아무런 속성을 부여하지 않았다.
+sidebar여서 오른쪽에 위치 해야 할 것 같지만
+그렇게 되면 position: absolute; display: flex;를 써서 
+자기 자신의 위치를 오른쪽에 위치시키고, 
+flex로 자식요소들의 정렬 방법도 정해줘야 해서 복잡해진다.
+*/
+.container {}
+
+
+input[id=trigger] {
+  display: none;
+}
+
+label[for=trigger] {
+  width: 30px;
+  height: 20px;
+  display: block;
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: 0.3s;
+}
+
+label[for=trigger] span {
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background-color: #000;
+  left: 0;
+  transition: 0.3s;
+}
+
+.sidebar {
+  background-color: #000;
+  width: 300px;
+  height: 100vh;
+  position: fixed;
+  right: -300px;
+  transition: 0.3s;
+}
+
+label[for=trigger] span:nth-child(1){
+  top: 0;
+}
+
+label[for=trigger] span:nth-child(2){
+  top: 50%;
+}
+
+label[for=trigger] span:nth-child(3){
+  top: 100%;
+}
+
+input[id=trigger]:checked + label[for=trigger] span:nth-child(1) {
+  top: 50%;
+  transform: rotate(45deg);
+}
+
+input[id=trigger]:checked + label[for=trigger] span:nth-child(2) {
+  opacity: 0;
+}
+
+input[id=trigger]:checked + label[for=trigger] span:nth-child(3) {
+  top: 50%;
+  transform: rotate(-45deg);
+}
+
+input[id=trigger]:checked ~ .sidebar {
+  right: 0;
+}
+input[id=trigger]:checked + label[for=trigger] {
+  right: 310px
+}
