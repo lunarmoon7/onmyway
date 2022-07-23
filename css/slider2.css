@@ -8,7 +8,6 @@
   width: 200px;
   height: 200px;
   overflow: hidden;
-  transition: 0.3s;
   position: relative;
 }
 
@@ -19,7 +18,7 @@
   width: 1000px;
   height: 200px;
   display: flex;
-  transform: 0.3s;
+  transition: 0.3s;
 }
 
 .box {
@@ -28,7 +27,6 @@
   text-align: center;
   line-height: 200px;
   flex-shrink: 0;
-  transition: 0.3s;
 }
 
 .box1 {background-color: aliceblue;}
