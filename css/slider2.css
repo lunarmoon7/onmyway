@@ -1,0 +1,52 @@
+.container {
+  width: 100%;
+  position: relative;
+}
+.wrapper {
+  border: 3px solid black;
+  margin: auto;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  transition: 0.3s;
+  position: relative;
+}
+
+.list {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1000px;
+  height: 200px;
+  display: flex;
+  transform: 0.3s;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  line-height: 200px;
+  flex-shrink: 0;
+  transition: 0.3s;
+}
+
+.box1 {background-color: aliceblue;}
+.box2 {background-color: deeppink;}
+.box3 {background-color: blueviolet;}
+.box4 {background-color: dodgerblue;}
+.box5 {background-color: aqua;}
+
+.container button {
+  position: absolute;
+  bottom: -50px;
+  width: 60px;
+  height: 30px;
+}
+
+.container .prevBtn {
+  left: 700px;
+}
+.container .nextBtn {
+  right: 700px;
+}
