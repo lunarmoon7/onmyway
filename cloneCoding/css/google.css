@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=Edu+SA+Beginner&family=Noto+Sans+Display:wght@500&display=swap');
+
+body {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; */
+  height: 100vh;
+  background-color: rgb(32, 33, 36);
+  color: #fff;
+  margin: 0;
+  
+}
+a {
+  text-decoration: none;
+  /* color: #333; */
+  color: #fff;
+}
+a:hover {
+  text-decoration: underline;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* margin: 25px 25px; */
+  padding: 25px;
+}
+
+.left_wrapper {
+  display: flex;
+}
+
+.info {
+  margin-right: 15px;
+}
+
+.right_wrapper {
+  width: 200px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.right_wrapper div {
+  margin-right: 17px;
+}
+
+.right_wrapper .gmail {
+  width: 50px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+
+.right_wrapper .image {
+  width: 60px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+.right_wrapper .menu {
+  width: 50px;
+  height: 40px;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+}
+.right_wrapper .user-icon {
+  margin-right: 0;
+  width: 50px;
+  height: 40px;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+}
+.right_wrapper .user-icon:hover {
+  background-color: rgb(143, 143, 143);
+}
+.right_wrapper .menu:hover {
+  background-color: rgb(143, 143, 143);
+}
+
+section {
+  /* position: relative; */
+  height: 1000px;
+  position: relative;
+}
+.wrapper {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+section .container {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 1000px; */
+  /* position: relative;
+  top: -200px; */
+}
+.title {
+  font-size: 6.5rem;
+  font-family: 'Noto Sans Display', sans-serif;
+}
+
+input.search-bar {
+  width: 650px;
+  border: 1px solid rgb(92, 95, 100);
+  border-radius: 35px;
+  height: 50px;
+  margin-top: 25px;
+  background-color: rgb(32, 33, 36);
+  font-size: 1.2rem;
+  color: #fff;
+  padding: 0px 60px;
+  position: relative;
+}
+
+.wrapper::before {
+  content: '\f002';
+  font-family: FontAwesome;
+  font-weight: 300;
+  font-size: 1.2rem;
+  line-height: 30px;
+  position: absolute;
+  color: rgb(136, 136, 136);
+  bottom: 11px;
+  left: 20px;
+  z-index: 999;
+  left: 20px;
+  width: 30px;
+  height: 30px;
+}
+
+.wrapper::after {
+  content: '\f11c';
+  font-family: FontAwesome;
+  font-size: 1.2rem;
+  line-height: 30px;
+  position: absolute;
+  color: rgb(136, 136, 136);
+  bottom: 11px;
+  right: 15px;
+  width: 30px;
+  height: 30px;
+}
+input.search-bar:focus {
+  outline: none;
+  background-color: rgb(48, 49, 52);
+  box-shadow: 0px 3px 10px rgb(0, 0, 0);
+}
+
+.under-box {
+  position: absolute;
+  bottom: -70px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+button {
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(48, 49, 52);
+  color: #fff;
+  padding: 7px 20px;
+  font-size: 1rem;
+  height: 40px;
+  cursor: pointer;
+}
+
+button.search-box {
+  /* padding: 7px; */
+  margin-right: 13px;
+}
+button.lucky-box {
+  /* padding: 7px; */
+}
+
+button:hover {
+  border: 1px solid rgb(122, 122, 122);
+}
+
+footer {
+  height: 100px;
+  background-color: rgb(23, 23, 23);
+  color: rgb(169, 169, 169);
+}
+footer a {
+  color: rgb(169, 169, 169);
+  font-size: 0.9em;
+}
+.upper-footer {
+  border-bottom: 1px solid #333;
+  height: 50px;
+  padding-left: 40px;
+  line-height: 50px;
+}
+
+.lower-footer {
+  height: 50px;
+  line-height: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.lower-footer .left-wrapper,
+.lower-footer .right-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lower-footer .left-wrapper {
+  width: 230px;
+  padding-left: 50px;
+}
+.lower-footer .right-wrapper {
+  width: 230px;
+  padding-right: 50px;
+}
+
+
+
+
+
